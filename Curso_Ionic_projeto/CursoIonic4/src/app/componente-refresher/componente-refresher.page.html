@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot = 'start'>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Componente Refresher</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-refresher slot = 'fixed' (ionRefresh) = "atualizarMensagem($event)">
+    <!--Aqui começa a Brincadeira-->
+    <ion-refresher-content
+    pullingIcon="arrow-dropdown"
+    pullingText="Puxe para Atualizar"
+    refreshingSpinner = 'circles'
+    refreshingText = 'Atualizando... espera meu filho...'
+    >
+
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <h1>Curso Ionic 4</h1>
+  {{message}}
+
+</ion-content>

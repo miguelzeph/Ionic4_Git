@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-searchbar color = 'secondary'></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <!--SearchBar DEFAULT-->
+  <ion-searchbar [(ngModel)] = 'nome' (ionInput) = 'filtrarItens()'></ion-searchbar>
+
+  <ion-list>
+    <ion-item *ngFor = 'let pessoa of pessoasFiltradas'>
+      {{pessoa.nome}}
+
+    </ion-item>
+  </ion-list>
+
+  <!--SearchBar nosso tema-->
+  <ion-searchbar color = 'danger'></ion-searchbar>
+  <!--Iniciar com valor-->
+  <ion-searchbar value='ionic'></ion-searchbar>
+  <!-- Tipos diferentes de Teclados = IGUAL AULA DE INPUT-->
+  <ion-searchbar type = 'tel'></ion-searchbar>
+  <!--cancelar customizado-->
+  <ion-searchbar showCancelButton cancelButtonText = 'CANCELAR :D'></ion-searchbar> 
+  <!--placehgolder-->
+  <ion-searchbar placeHolder = "Faça a sua Busca"></ion-searchbar>
+  <!--Animated-->
+  <ion-searchbar animated></ion-searchbar>
+  <!--IOS e android-->
+  <ion-searchbar mode ='ios' placeHolder = 'IOS'></ion-searchbar>
+  <ion-searchbar mode = 'md' placeHolder = "Android"></ion-searchbar> 
+
+
+</ion-content>

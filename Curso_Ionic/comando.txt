@@ -1,0 +1,31 @@
+npm cache clean -f
+
+sudo npm start myApp tabs --type=angular
+sudo ionic start myApp super --type=ionic-angular
+ionic start myApp tabs --type=ionic-angular
+ionic start appemBranco blank --typer=angular
+ionic start --list (VER TODOS TIPOS)
+
+#Rodar no Terminal
+ionic serve (normal)
+ionic serve --devapp (testar app)
+
+ionic generate => ele vai te retornar varios comandos para vc escolher sem precisar decorar
+ionic generate page (Nome)
+ionic cordova build (android/ios)
+ionic cordova run android
+
+
+Solucionando o Problema :  "Visual Studio Code is unable to watch for file changes in this large workspace" (error ENOSPC)#
+link: https://stackoverflow.com/questions/50901127/vsc-unable-to-watch-for-file-changes-in-this-large-workspace-weird
+
+sudo /bin/su -c "echo 'fs.inotify.max_user_watches=524288' >> /etc/sysctl.conf"
+sudo sysctl -p
+
+
+
+
+
+sudo rm -R ./myApp
+
+cordova = ele acessa recursos nativos do seu celular, exemplo: tirar foto, geolocalização etc...

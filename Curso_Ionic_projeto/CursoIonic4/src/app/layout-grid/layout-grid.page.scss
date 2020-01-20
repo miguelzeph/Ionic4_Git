@@ -1,0 +1,9 @@
+ion-grid{
+    --ion-grid-columns: 13; // Para resolver o bug das 12 colunas no Ionic
+    ion-row{
+        ion-col{
+            background-color: rgb(139, 135, 135);
+            margin: 1px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>componenteToggle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Padrão</ion-label>
+      <ion-toggle></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Colorido</ion-label>
+      <ion-toggle color = 'dark'></ion-toggle>
+    </ion-item>
+
+  <ion-item>
+    <ion-label>Checked</ion-label>
+    <ion-toggle checked></ion-toggle>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label>Checked e Disabled</ion-label>
+    <ion-toggle disabled checked></ion-toggle>
+  </ion-item>
+
+  <!--Toggles Casados... ngModel-->
+  <ion-item>
+    <ion-label>Casado 1</ion-label>
+    <ion-toggle [(ngModel)] = 'marcado'></ion-toggle>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label>Casado 2</ion-label>
+    <ion-toggle [(ngModel)] = 'marcado'></ion-toggle>
+  </ion-item>
+  <!--.................................-->
+
+
+
+  </ion-list>
+
+
+</ion-content>

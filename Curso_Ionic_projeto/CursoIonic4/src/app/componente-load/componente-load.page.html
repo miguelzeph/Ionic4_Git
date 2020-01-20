@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot = 'start'>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Componente Load</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-button expand = 'block' color = 'danger' (click) = 'showLoading()'>Load Padrão</ion-button>
+  <ion-button expand = 'block' color = 'danger' (click) = "showLoadingCustomizado('dots')">Load Customizado</ion-button>
+
+</ion-content>

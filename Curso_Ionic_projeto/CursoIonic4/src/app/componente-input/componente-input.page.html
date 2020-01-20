@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Componente Input</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!--Default-->
+  <ion-input></ion-input>
+
+  <!--Input com valor-->
+  <ion-input value = '1234'></ion-input>
+
+  <!--Input com placeholder-->
+  <ion-input placeholder= 'informe seu nome'></ion-input>
+
+  <!--Input com icone de limpar-->
+  <ion-input clearInput value = 'Curso de Ionic4'></ion-input>
+
+  <!--Input com valor numérico-->
+  <ion-input type = 'number' placeholder = "digite um número"></ion-input>
+
+  <!--Input com valor texto-->
+  <ion-input type = 'text' placeholder = "digite um texto"></ion-input>
+
+  <!--Input com valor password-->
+  <ion-input type = 'password' placeholder = "digite uma senha"></ion-input>
+
+  <!--Input com valor telefone-->
+  <ion-input type = 'tel' placeholder = "digite um telefone"></ion-input>
+
+  <!--Input com valor url-->
+  <ion-input type = 'url' placeholder = "digite uma url"></ion-input>
+
+  <!--Input search-->
+  <ion-input type = 'search' placeholder = "pesquisar"></ion-input>
+
+  <ion-item>
+    <ion-label>Default sem position</ion-label>
+    <ion-input type ="text" placeholder = "informe seu nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position = "floating">Position Floating</ion-label>
+    <ion-input type ="text" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position = "fixed">Position Fixed</ion-label>
+    <ion-input type ="text" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position = "stacked">Position Stacked</ion-label>
+    <ion-input type ="text" placeholder = "data DD/MM/AAAA"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position = "floating">color</ion-label>
+    <ion-input type ="text" color = 'danger' placeholder = "informe seu nome"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >Disabled</ion-label>
+    <ion-input type ="text" disabled = "true" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >Mínimo e Máximo</ion-label>
+    <ion-input type ="text"  min = "3" max = "5"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >Maxlength</ion-label>
+    <ion-input type ="text" maxlength =  "5"></ion-input>
+  </ion-item>
+
+
+</ion-content>

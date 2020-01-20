@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Componente Card</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-img src = "/assets/coliseu.png"></ion-img>
+    <ion-card-content>
+      <ion-card-title>Coliseu</ion-card-title>
+      <p>Muitos morreram como heróis!</p>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+        <ion-card-title>Ionic 4</ion-card-title>
+      <ion-card-subtitle> Vagas de Emprego</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Precisamos de desenvolvedores que atuem na plataforma ionic4
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item href = "#" class = "activated">
+      <ion-icon name = 'wifi' slot = 'start'></ion-icon>
+      <ion-label>Wifi Ativo</ion-label>
+    </ion-item>
+    
+    <ion-item href = "#">
+      <ion-icon name = 'wine' slot = 'start'></ion-icon>
+      <ion-label>Vinho</ion-label>
+      <ion-icon name = 'warning' slot ='end'></ion-icon>
+    </ion-item>
+
+  </ion-card>
+
+
+  <ion-card color = 'danger'>
+    <ion-img src = "/assets/coliseu.png"></ion-img>
+    <ion-card-content>
+      <ion-card-title>Coliseu</ion-card-title>
+      <p>Muitos morreram como heróis!</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color = 'dark'>
+    <ion-img src = "/assets/coliseu.png"></ion-img>
+    <ion-card-content>
+      <ion-card-title>Coliseu</ion-card-title>
+      <p>Muitos morreram como heróis!</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color = 'dark' mode = 'ios'>
+    <ion-card-content>
+      <ion-card-title>Modelo IOS</ion-card-title>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color = 'dark' mode = 'md'>
+    <ion-card-content>
+      <ion-card-title>Modelo Android</ion-card-title>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

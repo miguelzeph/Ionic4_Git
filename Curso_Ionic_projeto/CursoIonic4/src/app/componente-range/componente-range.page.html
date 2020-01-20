@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot = 'start'>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>componenteRange</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-range></ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-range pin = 'true'></ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-range color = 'danger' pin = 'true'></ion-range>
+    </ion-item>
+
+    <!--Padrão é min = 0 e max = 100-->
+    <ion-item>
+      <ion-range min = "10" max = "20" pin = 'true'></ion-range>
+    </ion-item>
+
+    <ion-item text-center>
+      <ion-range min = "10" max = "20" pin = 'true'>
+        <ion-label slot = 'start'>Min</ion-label>
+        <ion-label slot = 'end'>Max</ion-label>
+      </ion-range>
+    </ion-item>
+
+    <!--Icones-->
+    <ion-item>
+      <ion-range>
+        <ion-icon name = 'partly-sunny' slot = 'start' size = 'small'></ion-icon>
+        <ion-icon name = 'sunny' slot = 'end' size = 'small'></ion-icon>
+      </ion-range>
+    </ion-item>
+
+
+    <!--Snaps = quebrar os valores Steps-->
+    <ion-item>
+      <ion-range min = '1000' max = '2000' step = '200' snaps = 'true' pin = 'true'>
+      </ion-range>
+    </ion-item>
+
+    <!--Intervalo-->
+    <ion-item>
+      <ion-range dualKnobs = 'true' min = '1000' max = '2000' step = '200' snaps = 'true' pin = 'true'>
+      </ion-range>
+    </ion-item>
+
+    <!--Disabled-->
+    <ion-item>
+      <ion-range disabled min = '1000' max = '2000' step = '200' snaps = 'true' pin = 'true'>
+      </ion-range>
+    </ion-item>
+
+
+    <!--Value-->
+    <ion-item>
+      <ion-range min = '1000' max = '2000' step = '200' value = '1500' snaps = 'true' pin = 'true'>
+      </ion-range>
+    </ion-item>
+
+    <!--Value+disabled-->
+    <ion-item>
+      <ion-range disabled min = '1000' max = '2000' step = '200' value = '1500' snaps = 'true' pin = 'true'>
+      </ion-range>
+    </ion-item>
+      
+  </ion-list>
+
+
+
+
+</ion-content>

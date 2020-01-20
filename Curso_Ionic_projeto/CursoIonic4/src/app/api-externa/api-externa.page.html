@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot = 'start'>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Api Externa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-button expand= 'full' (click) = "get()">GET- Receber dados do Servidor</ion-button>
+  <ion-button expand= 'full' (click) = "post()">POST- enviar dados do Servidor</ion-button>
+  <ion-button expand= 'full' (click) = "put()">PUT- atualizar dados do Servidor</ion-button>
+  <ion-button expand= 'full' (click) = "delete()">DELETE- excluir dados do Servidor</ion-button>
+  <ion-button expand= 'full' (click) = "cep()">Consultar Cep</ion-button>
+
+  <h4> Resposta do Servidor</h4>
+  {{result}}
+</ion-content>

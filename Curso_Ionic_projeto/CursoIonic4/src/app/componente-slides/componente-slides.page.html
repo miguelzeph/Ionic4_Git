@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot = 'start'>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Componente Slides</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-slides pager = 'true'><!--pager = BOLINHAS EM BAIXO-->
+
+<!----------------------------------------->
+  <ion-slide>
+    <ion-grid>
+
+      <ion-row>
+        <ion-col>
+          <h1>Cadernos</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <img src= "/assets/caderno_1.png" width = '400' heigth= '400'>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-slide>
+<!----------------------------------------->
+  <ion-slide>
+    <img src= "/assets/caderno_2.png" width = '400' heigth= '400'>
+  </ion-slide>
+<!----------------------------------------->
+  <ion-slide>
+    <img src= "/assets/caderno_3.png" width = '400' heigth= '400'>
+  </ion-slide>
+<!----------------------------------------->
+
+  <ion-slide>
+    <ion-button expand = 'block' (click) = 'comecar()'>Começar o Curso</ion-button>
+  </ion-slide>
+<!----------------------------------------->
+
+  </ion-slides>
+
+</ion-content>

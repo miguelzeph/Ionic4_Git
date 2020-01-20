@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ionic 4 com Js puro</title>
+    <script src="https://unpkg.com/@ionic/core@4.1.2/dist/ionic.js"></script>
+</head>
+<body>
+
+    <ion-button expand = 'full' onClick = 'criarComponente()'>Enviar Alerta</ion-button>
+
+    <script>
+        
+        function criarComponente(){
+            let toggle = document.createElement('ion-toggle')
+            document.body.appendChild(toggle)
+        }
+    
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "appemBranco",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

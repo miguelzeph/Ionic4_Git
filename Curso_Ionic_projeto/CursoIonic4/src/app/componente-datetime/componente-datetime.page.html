@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Componente Datetime</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label>Data Default</ion-label>
+    <ion-datetime></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Display Format</ion-label>
+    <ion-datetime display-format = "DD/MM/YYYY"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Display Format 2</ion-label>
+    <ion-datetime display-format = "DD/MM/YY"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <!--Picker é a caixinha que você escolhe a Data-->
+    <ion-label>Display+Picker</ion-label>
+    <ion-datetime display-format = "MM/YYYY" picker-format = "MMMM YYYY"></ion-datetime>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Min e Max</ion-label>
+    <ion-datetime min = '2016' max = '2017-02-10'></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Min e Max 2</ion-label>
+    <ion-datetime min = '2016-03-01' max = '2016-03-15'></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Min e Max 3</ion-label>
+    <ion-datetime min = '2016' max = '2017'></ion-datetime>
+  </ion-item>
+  
+
+</ion-content>

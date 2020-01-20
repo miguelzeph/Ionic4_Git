@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot = 'start'>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Componente Select</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <!--Seleciona somente 1 item-->
+    <ion-list-header>Select Simples</ion-list-header>
+    <ion-item>
+      <ion-label>Sexo</ion-label>
+      <ion-select>
+        <ion-select-option value = 'M'>Masculino</ion-select-option>
+        <ion-select-option value = 'F'>Feminino</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
+
+
+    <ion-item>
+      <ion-label>Cor</ion-label>
+      <ion-select placeHolder = "Selecione" value = "blue" okText = "Selecionar" cancelText = "Cancelar">
+        <ion-select-option value = 'pink'>Rosa</ion-select-option>
+        <ion-select-option value = 'blue'>Azul</ion-select-option>
+        <ion-select-option value = 'black'>Preto</ion-select-option>
+        <ion-select-option value = 'orange'>Laranja</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+
+  <ion-list>
+    <!--Seleciona mais de 1 item-->
+    <ion-list-header>Select Multiplo</ion-list-header>
+
+    <ion-item>
+      <ion-label>Frutas</ion-label>
+      <ion-select multiple = 'true' placeHolder = "Selecione" value = "morango" okText = "Selecionar" cancelText = "Não Selecionar">
+        <ion-select-option value = 'abacaxi'>Abacaxi</ion-select-option>
+        <ion-select-option value = 'pera'>Pera</ion-select-option>
+        <ion-select-option value = 'banana'>Banana</ion-select-option>
+        <ion-select-option value = 'morango'>Morango</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>Animais</ion-label>
+      <ion-select multiple = 'true'>
+        <ion-select-option selected value = 'cat'>Gato</ion-select-option>
+        <ion-select-option value = 'dog'>Cachorro</ion-select-option>
+        <ion-select-option selected value = 'bird'>Passaro</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+
+
+  <ion-list>
+      <!--Seleciona customizado-->
+      <ion-list-header>Select Customizado</ion-list-header>
+  
+      <ion-item>
+        <ion-label>Alerta</ion-label>
+        <!--criei no .ts o "vetor"-->
+        <ion-select [interfaceOptions] = 'vetor' interface = 'alert'>
+          <ion-select-option value = 'abacaxi'>Abacaxi</ion-select-option>
+          <ion-select-option value = 'pera'>Pera</ion-select-option>
+          <ion-select-option value = 'banana'>Banana</ion-select-option>
+          <ion-select-option value = 'morango'>Morango</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Action-Sheet</ion-label>
+          <!--criei no .ts o "vetor"-->
+          <ion-select [interfaceOptions] = 'vetor' interface = 'action-sheet'>
+            <ion-select-option value = 'abacaxi'>Abacaxi</ion-select-option>
+            <ion-select-option value = 'pera'>Pera</ion-select-option>
+            <ion-select-option value = 'banana'>Banana</ion-select-option>
+            <ion-select-option value = 'morango'>Morango</ion-select-option>
+          </ion-select>
+        </ion-item>
+    
+  
+    </ion-list>
+
+</ion-content>

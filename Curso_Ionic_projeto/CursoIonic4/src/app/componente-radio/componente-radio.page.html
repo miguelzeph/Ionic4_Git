@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot = 'start'>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Componente Radio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-radio-group> <!--Já entende que só um poderá ser selecionado-->
+      <ion-list-header>
+        <ion-label>Frutas</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Abacate</ion-label>
+        <ion-radio value = 'abacate' slot = 'start'></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Maça</ion-label>
+        <ion-radio value = 'maca' slot = 'end'></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Morango</ion-label>
+        <ion-radio value = 'morando'></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+
+  <ion-list>
+    <ion-radio-group>
+      <ion-list-header>
+        <ion-label>Opções</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Default</ion-label>
+        <ion-radio></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Checkbox</ion-label>
+        <ion-radio checked = "true"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Disabled</ion-label>
+        <ion-radio disabled= "true"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Danger</ion-label>
+        <ion-radio checked = 'true' color = "danger"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-list>
+    <ion-radio-group>
+      <ion-label>Dois Radio</ion-label>
+      <ion-radio slot = 'start' checked = 'true' color = 'dark'></ion-radio>
+      <ion-radio slot = 'start' color = 'danger'></ion-radio>
+    </ion-radio-group>
+  </ion-list>
+
+</ion-content>
